@@ -1,0 +1,13 @@
+What about the codebase scales well? What doesnt scale well and limits flexibility?
+1. Create 50 Vnet, Manually creates take more time, So better create using Terraform.
+2. It can easily create using Terraform Module. 
+3. Without Module, It's not good idea crate multiple Vnet without using Terraform Module. That's not good idea.
+
+How would you structure the codebase to enable CI/CD pipelines to be added and run in a managable configuration?
+1. We can use CI/CD pipeline is really best option.
+2. We can use store sensitive data in the variable in CI Tool. Eg. Azure DevOps Parameter Store.
+3. We can track the changes and roll back the changes if needed. 
+
+Does the requirement for multiple Azure regions affect the way you structure the codebase?
+Need VNet Peering or VPN Gateway for multiple Azure Regions connecitivity.
+
